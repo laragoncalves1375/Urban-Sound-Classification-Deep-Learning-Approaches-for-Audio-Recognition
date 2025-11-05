@@ -54,7 +54,7 @@ Esse processo resulta em vetores de cerca de **225 atributos por amostra**, perm
 Os primeiros modelos de deep learning aplicados a sons urbanos trataram os espectrogramas como imagens.
 [Piczak (2015)](Piczak2015-ESC-ConvNet.pdf) foi pioneiro ao utilizar **CNNs 2D** sobre espectrogramas Mel, demonstrando que este tipo de rede supera métodos clássicos como SVM ou Random Forest.
 
-Mais tarde, [Massoudi, Verma e Jain (2021)](Urban_Sound_Classification_using_CNN.pdf) reforçaram a eficácia desta abordagem, usando Mel-spectrogramas derivados de MFCCs como entrada de uma CNN. O modelo alcançou **91% de acurácia**, destacando-se pela sua simplicidade e eficiência.
+Mais tarde, Massoudi, Verma e Jain ([Massoudi et al., 2021](Urban_Sound_Classification_using_CNN.pdf)) reforçaram a eficácia desta abordagem, usando Mel-spectrogramas derivados de MFCCs como entrada de uma CNN. O modelo alcançou **91% de acurácia**, destacando-se pela sua simplicidade e eficiência.
 [Barua et al. (2023)](A_Deep_Learning_Approach_for_Urban_Sound.pdf) compararam várias arquiteturas (ANN, CNN, RNN, LSTM e GRU) e **confirmaram que as CNNs apresentam o melhor equilíbrio entre precisão e custo computacional**.
 
 As CNNs 2D são eficazes porque extraem padrões espaciais locais nas representações tempo-frequência do áudio, tornando-se o padrão dominante para classificação acústica.
@@ -70,7 +70,7 @@ Os autores concluíram que a combinação entre CNN (para extração espacial) e
 
 ### 6. Modelos End-to-End — CNNs 1D e Aprendizagem Direta do Áudio
 
-Enquanto as abordagens anteriores dependem de MFCCs, [Abdoli, Cardinal e Koerich (2019)](End_to_end_1D_CNN.pdf) propuseram um modelo **1D-CNN end-to-end** que aprende diretamente a partir do **sinal de áudio bruto (raw waveform)**.
+Enquanto as abordagens anteriores dependem de MFCCs, Abdoli, Cardinal e Koerich ([Abdoli et al., 2019](End_to_end_1D_CNN.pdf)) propuseram um modelo **1D-CNN end-to-end** que aprende diretamente a partir do **sinal de áudio bruto (raw waveform)**.
 Essa abordagem elimina completamente o pré-processamento manual, deixando a rede aprender as representações relevantes a partir do som original.
 
 O modelo atingiu **89% de acurácia** no UrbanSound8K e mostrou filtros internos semelhantes aos padrões auditivos humanos, confirmando a capacidade das CNNs 1D de aprender características perceptualmente significativas.
@@ -99,3 +99,4 @@ A adoção de **CNNs e LSTMs** revelou-se decisiva, sendo que o uso combinado de
 
 
 Assim, a escolha de desenvolver neste projeto dois modelos — um **CNN** e um **RNN** - aplicados ao **UrbanSound8K**, está totalmente alinhada com o estado atual das investigações e representa uma abordagem sólida, fundamentada e relevante no contexto da inteligência artificial aplicada ao som.
+
