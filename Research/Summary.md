@@ -28,7 +28,7 @@ O UrbanSound8K é um subconjunto anotado do UrbanSound Dataset, composto por cer
 - siren 
 - street music
 
-Cada gravação tem no máximo **4 segundos** e foi cuidadosamente segmentada e anotada quanto à ocorrência sonora e à saliência acústica (sons de fundo vs. sons em primeiro plano).
+Cada gravação tem cerca de **4 segundos** e foi cuidadosamente segmentada e anotada quanto à ocorrência sonora e à saliência acústica (sons de fundo vs. sons em primeiro plano).
 
 As classes foram selecionadas com base na frequência de queixas registadas no sistema **NYC 311**, tornando o dataset representativo dos problemas acústicos mais comuns nas cidades modernas.
 
@@ -37,7 +37,7 @@ A metodologia de Salamon incluiu também um protocolo de validação em **10 fol
 
 ### 3. Extração de Características
 #### Escolha das Características - MFCCs
-Grande parte da literatura posterior ([Piczak, 2015](Piczak2015-ESC-ConvNet.pdf); [Massoudi et al., 2021](Urban_Sound_Classification_using_CNN.pdf); [Tyagi et al., 2023](Urban+Sound+Classification+for+Audio+Analysis+Using+Long+Short-Term+Memory.pdf)) baseia-se em coeficientes cepstrais na escala Mel (MFCCs), que representam o conteúdo espectral de forma compacta e perceptualmente significativa.
+Grande parte da literatura posterior ([Piczak, 2015](Piczak2015-ESC-ConvNet.pdf); [Massoudi et al., 2021](Urban_Sound_Classification_using_CNN.pdf); [Tyagi et al., 2023](Urban+Sound+Classification+for+Audio+Analysis+Using+Long+Short-Term+Memory.pdf)) baseia-se em coeficientes cepstrais na escala Mel (MFCCs), que representam o conteúdo espectral de forma compacta e percetualmente significativa.
 
 #### Processo de Extração
 - O sinal é dividido em **janelas de 23,2 ms**, com **50% de sobreposição**.
@@ -57,7 +57,7 @@ Os primeiros modelos de deep learning aplicados a sons urbanos trataram os espec
 Mais tarde, [Massoudi, Verma e Jain (2021)](Urban_Sound_Classification_using_CNN.pdf) reforçaram a eficácia desta abordagem, usando Mel-spectrogramas derivados de MFCCs como entrada de uma CNN. O modelo alcançou **91% de acurácia**, destacando-se pela sua simplicidade e eficiência.
 [Barua et al. (2023)](A_Deep_Learning_Approach_for_Urban_Sound.pdf) compararam várias arquiteturas (ANN, CNN, RNN, LSTM e GRU) e **confirmaram que as CNNs apresentam o melhor equilíbrio entre precisão e custo computacional**.
 
-As CNNs 2D são eficazes porque extraem padrões espaciais locais — como texturas e harmónicos — nas representações tempo-frequência do áudio, tornando-se o padrão dominante para classificação acústica.
+As CNNs 2D são eficazes porque extraem padrões espaciais locais nas representações tempo-frequência do áudio, tornando-se o padrão dominante para classificação acústica.
 
 
 ### 5. Modelos Baseados em RNN (Recurrent Neural Networks)
@@ -70,7 +70,7 @@ Os autores concluíram que a combinação entre CNN (para extração espacial) e
 
 ### 6. Modelos End-to-End — CNNs 1D e Aprendizagem Direta do Áudio
 
-Enquanto as abordagens anteriores dependem de MFCCs, Abdoli, Cardinal e Koerich (2019) propuseram um modelo **1D-CNN end-to-end** que aprende diretamente do **sinal de áudio bruto (raw waveform)**.
+Enquanto as abordagens anteriores dependem de MFCCs, [Abdoli, Cardinal e Koerich (2019)](End_to_end_1D_CNN.pdf) propuseram um modelo **1D-CNN end-to-end** que aprende diretamente a partir do **sinal de áudio bruto (raw waveform)**.
 Essa abordagem elimina completamente o pré-processamento manual, deixando a rede aprender as representações relevantes a partir do som original.
 
 O modelo atingiu **89% de acurácia** no UrbanSound8K e mostrou filtros internos semelhantes aos padrões auditivos humanos, confirmando a capacidade das CNNs 1D de aprender características perceptualmente significativas.
@@ -81,11 +81,11 @@ As CNNs 1D oferecem vantagens como **simplicidade, baixo número de parâmetros 
 
 ### 7. Discussão e Trabalho Futuro
 A literatura revela uma clara evolução metodológica:
-- ``2014–2015``: Criação do dataset e introdução das primeiras CNNs aplicadas a espectrogramas (Salamon, Piczak).
-- ``2019–2021``: Consolidação de CNNs com MFCCs e surgimento de abordagens end-to-end (Abdoli, Massoudi).
-- ``2023–2024``: Ênfase na modelação temporal (Tyagi) e no processamento direto do áudio (Zhao).
+- ``2014–2015``: Criação do dataset e introdução das primeiras CNNs aplicadas a espectrogramas.
+- ``2019–2021``: Consolidação de CNNs com MFCCs e surgimento de abordagens end-to-end.
+- ``2023–2024``: Ênfase na modelação temporal e no processamento direto do áudio.
 
-As tendências atuais indicam que a **combinação de CNNs e RNNs (CRNN)** representa o estado da arte na classificação de som urbano, pois combina:
+As tendências atuais indicam que a **combinação de CNNs e RNNs (CRNN)** representa o estado atual na classificação de sons urbanos, pois combina:
 
 - **CNNs** → Captação de padrões espaciais e harmónicos.
 - **RNNs/LSTMs** → Modelação temporal e rítmica.
@@ -97,4 +97,5 @@ Para trabalhos futuros, sugerem-se **arquiteturas híbridas**, técnicas de **au
 Com base nas obras analisadas, observa-se que os maiores avanços em classificação de som urbano derivam da transição entre **modelos tradicionais baseados em características fixas e modelos de aprendizagem profunda** capazes de extrair representações diretamente do sinal.
 A adoção de **CNNs e LSTMs** revelou-se decisiva, sendo que o uso combinado destas arquiteturas permite explorar simultaneamente as dimensões **frequencial e temporal** do som.
 
-Assim, a escolha de desenvolver neste projeto dois modelos — um **CNN** e um **RNN** (LSTM) aplicados ao **UrbanSound8K** — está totalmente alinhada com o estado atual e representa uma abordagem sólida, fundamentada e relevante no contexto da inteligência artificial aplicada ao som.
+
+Assim, a escolha de desenvolver neste projeto dois modelos — um **CNN** e um **RNN** - aplicados ao **UrbanSound8K**, está totalmente alinhada com o estado atual das investigações e representa uma abordagem sólida, fundamentada e relevante no contexto da inteligência artificial aplicada ao som.
