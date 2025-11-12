@@ -1,4 +1,4 @@
-# Urban-Sound-Classification-Deep-Learning-Approaches-for-Audio-Recognition4
+# UrbanSound8K Classification - Deep Learning Approaches for Audio Recognition
 
 This project was developed for the "Machine Learning II" course and ains to developed deep learning classifiers for urban sund data, using the UrbanSound8K dataset. Classifiers must be able to identify which of 10 classses of urban sounds (sirens, dog barking, drills, etc.) a previously unseen audio clip belongs to.
 
