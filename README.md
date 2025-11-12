@@ -17,7 +17,7 @@ This course is part of the **first semester** of the **third year** of the **Bac
 
 ###
 
-[![Link to Course](https://img.shields.io/badge/Link%20to%20Course-blue?style=for-the-badge)](https://sigarra.up.pt/fcup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=529873) <br>
+[![Link to Course](https://img.shields.io/badge/Link%20to%20Course-blue?style=for-the-badge)](https://sigarra.up.pt/fcup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=570360) <br>
 [![FCUP](https://img.shields.io/badge/FCUP-lightgrey?style=for-the-badge)](https://www.up.pt/fcup/pt/)
 [![ICBAS](https://img.shields.io/badge/ICBAS-lightgrey?style=for-the-badge)](https://www.up.pt/icbas/pt/)
 [![FFUP](https://img.shields.io/badge/FFUP-lightgrey?style=for-the-badge)](https://sigarra.up.pt/ffup/pt/web_page.Inicial)
