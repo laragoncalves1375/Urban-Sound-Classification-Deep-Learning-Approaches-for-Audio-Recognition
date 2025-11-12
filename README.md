@@ -11,7 +11,6 @@ For this we implemented: **Convolutional Neural Network (CNN)** and **Recurrent 
 ## The Project
 The goal of this project is to develop two types of neural networks capable of correctly classifying portions of audio correctly.
 
-<br>
 
 ### The Dataset
 In this project, we use the **"UrbanSound8K** dataset, which can be obtained through the following link: https://urbansounddataset.weebly.com/urbansound8k.html.
@@ -28,11 +27,9 @@ This dataset contains 8732 labeled audio clips lasting approximately 4 seconds. 
 - siren
 - street music
 
-<br>
 
 ### Pre-Processing
 
-<br>
 
 ### Models
 - CNN
