@@ -15,7 +15,7 @@ The goal of this project is to develop two types of neural networks capable of c
 ### The Dataset
 In this project, we use the **"UrbanSound8K** dataset, which can be obtained through the following link: https://urbansounddataset.weebly.com/urbansound8k.html.
 
-This dataset contains 8732 labeled audio clips lasting approximately 4 seconds. The audio clips are labeled according to the following 10 classes:
+This dataset contains 8732 labed sounds excerpts of duration less than or equal to 4 seconds. The audio clips are labeled according to the following 10 classes:
 - air conditioner
 - car horn
 - children playing
