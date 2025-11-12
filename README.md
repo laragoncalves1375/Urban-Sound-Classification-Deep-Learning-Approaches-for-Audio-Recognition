@@ -4,6 +4,30 @@ This project was developed for the "Machine Learning II" course and ains to deve
 
 For this we implemented: **Convolutional Neural Network (CNN)** and **Recurrent Neural Network (RNN)**.
 
+## Requirements:
+
+<br>
+
+## The Project
+
+<br>
+
+### The Dataset
+
+
+### Pre-Processing
+
+
+### Models
+- CNN
+- RNN
+
+<br>
+
+## About the repository:
+
+<br>
+
 ## Authors
 
 * **Beatriz Pereira** - *Bioinformatics - FCUP* - [Beapereirax](https://github.com/Beapereirax) 
